@@ -1,10 +1,9 @@
 def call() {
-  node {
-      sh '''
-        git version
-        java -version
-        mvn -version
-      '''
-  }
+    node {
+        bat '''
+            git --version
+            java -version
+            mvn --version
+        '''
+    }
 }
- 
