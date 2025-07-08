@@ -1,10 +1,10 @@
 def call(Map config) {
     node {
-      echo "${config.message}"
-      sh '''
-        git version
-        java -version
-        mvn -version
-      '''
+        echo "${config.message}"
+        bat '''
+            git --version
+            java -version
+            mvn --version
+        '''
     }
 }
